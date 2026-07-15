@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Brayan Julian Nengua Prieto - AI & Cloud Architect</title>
+    <meta name="description" content="Brayan Julian Nengua Prieto - AI Developer & Cloud Automation Architect. Resume / Curriculum Vitae.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+            line-height: 1.4;
+        }
+
+        /* A4 Page Simulation for Web View */
+        .page-container {
+            max-width: 850px;
+            margin: 2rem auto;
+            background-color: white;
+            padding: 30px 40px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        /* Print Settings (To export as perfect PDF) */
+        @media print {
+            @page {
+                margin: 1cm;
+                size: A4;
+            }
+            body {
+                background-color: white;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .page-container {
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+                border-radius: 0;
+                max-width: 100%;
+                width: 100%;
+            }
+            /* Hide the download button when printing */
+            .no-print {
+                display: none !important;
+            }
+
+            /* Prevent page breaks inside experience items */
+            .experience-item {
+                page-break-inside: avoid;
+            }
+        }
+
+        .section-header {
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 4px;
+            margin-bottom: 12px;
+            margin-top: 20px;
+            font-weight: 700;
+            color: #111827;
+            text-transform: uppercase;
+            font-size: 0.875rem;
+            letter-spacing: 0.05em;
+        }
+
+        .bullet-point {
+            position: relative;
+            padding-left: 1rem;
+        }
+        .bullet-point::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #6b7280;
+        }
+    </style>
+</head>
+<body class="antialiased text-[13px] sm:text-sm">
+
+    <!-- Floating Print/PDF Button -->
+    <div class="fixed bottom-6 right-6 no-print z-50">
+        <button onclick="window.print()" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full shadow-lg transition-all flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+            Download PDF
+        </button>
+    </div>
+
+    <div class="page-container">
+
+        <!-- HEADER -->
+        <header class="text-center mb-4">
+            <h1 class="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">BRAYAN JULIAN NENGUA PRIETO</h1>
+            <h2 class="text-base sm:text-lg font-medium text-blue-600 mt-1">AI Developer & Cloud Automation Architect</h2>
+
+            <div class="flex flex-wrap justify-center gap-x-4 gap-y-1 mt-2 text-xs sm:text-sm text-gray-600 font-medium">
+                <span class="flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" /></svg>
+                    Bogotá, Colombia
+                </span>
+                <span class="flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" /><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" /></svg>
+                    brayannengua@gmail.com
+                </span>
+                <span class="flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" /></svg>
+                    +57 304 3723 585
+                </span>
+                <a href="https://linkedin.com/in/brayan-nengua" target="_blank" class="flex items-center gap-1 text-blue-600 hover:underline">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    linkedin.com/in/brayan-nengua
+                </a>
+            </div>
+        </header>
+
+        <!-- PROFILE -->
+        <section>
+            <h3 class="section-header">Professional Summary</h3>
+            <p class="text-gray-700 text-justify text-sm">
+                Software Developer specialized in orchestrating and integrating Artificial Intelligence models within enterprise architectures. Skilled at bridging Pro-Code development (Python, Java, JavaScript) and Low-Code ecosystems (Microsoft Power Platform) to deliver scalable, cloud-native solutions. Focused on raising the technical maturity of projects through robust architecture design and intelligent automation, consistently translating engineering decisions into measurable business value and operational efficiency.
+            </p>
+
+            <!-- Modern badges for Core Focus -->
+            <div class="flex flex-wrap gap-2 mt-2">
+                <span class="bg-gray-100 text-gray-800 border border-gray-200 px-2 py-0.5 rounded text-[11px] font-semibold">AI Integration & Orchestration</span>
+                <span class="bg-gray-100 text-gray-800 border border-gray-200 px-2 py-0.5 rounded text-[11px] font-semibold">Full-Stack & Pro-Code Development</span>
+                <span class="bg-gray-100 text-gray-800 border border-gray-200 px-2 py-0.5 rounded text-[11px] font-semibold">Cloud & Low-Code Architecture</span>
+                <span class="bg-gray-100 text-gray-800 border border-gray-200 px-2 py-0.5 rounded text-[11px] font-semibold">Governance (ALM) & CI/CD</span>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section>
+            <h3 class="section-header">Technical Skills</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-1.5 text-sm">
+                <div>
+                    <span class="font-semibold text-gray-900">AI & Data:</span> AI Orchestration, Model/API Integration (OpenAI, Claude, Ollama), Generative AI (GenAI), Advanced Prompt Engineering.
+                </div>
+                <div>
+                    <span class="font-semibold text-gray-900">Pro-Code Development:</span> Python, Java, JavaScript, Vue.js, Angular, TensorFlow, PyTorch.
+                </div>
+                <div>
+                    <span class="font-semibold text-gray-900">Low-Code Ecosystem:</span> Power Platform Expert, Power Automate, Dataverse, SharePoint, Microsoft 365 Security.
+                </div>
+                <div>
+                    <span class="font-semibold text-gray-900">Cloud & Architecture:</span> Azure (Functions, Logic Apps, DevOps), Google Cloud Run, SQL/NoSQL, REST APIs, C4 Model, Git.
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section>
+            <h3 class="section-header">Professional Experience</h3>
+
+            <!-- GeoPark -->
+            <div class="mb-3 experience-item">
+                <div class="flex justify-between items-baseline mb-0.5">
+                    <h4 class="font-bold text-gray-900 text-[15px]">GeoPark <span class="text-xs font-normal text-gray-500 ml-1">| Bogotá, Colombia (Hybrid)</span></h4>
+                    <span class="text-xs text-gray-600 font-medium whitespace-nowrap">May 2026 – Present</span>
+                </div>
+                <div class="italic text-gray-700 mb-1.5 font-medium text-xs">Software Developer - Automation, AI & Low-Code</div>
+                <ul class="text-gray-700 text-sm">
+                    <li class="bullet-point"><strong>Designing the core architecture for AI model integration</strong> across the company's operational workflows, building the orchestration layer between Pro-Code systems (Python/Java) and Low-Code platforms to enable automated decision-making.</li>
+                    <li class="bullet-point"><strong>Building scalable, cloud-native Full-Stack ecosystems</strong>, developing end-to-end APIs and integrations that connect legacy infrastructure with new AI-driven solutions, projecting a 40%–60% improvement in core process efficiency.</li>
+                    <li class="bullet-point"><strong>Leading the technical design of complex solutions</strong> under a continuous value-delivery approach (Agile), defining advanced hybrid development standards to drive technology adoption and ROI.</li>
+                </ul>
+            </div>
+
+            <!-- IKM -->
+            <div class="mb-3 experience-item">
+                <div class="flex justify-between items-baseline mb-0.5">
+                    <h4 class="font-bold text-gray-900 text-[15px]">IKM Information and Knowledge Management <span class="text-xs font-normal text-gray-500 ml-1">| Bogotá, Colombia (Remote)</span></h4>
+                    <span class="text-xs text-gray-600 font-medium whitespace-nowrap">June 2023 – May 2026</span>
+                </div>
+                <div class="italic text-gray-700 mb-1.5 font-medium text-xs">Web Developer & Cloud Platform Analyst III</div>
+                <ul class="text-gray-700 text-sm">
+                    <li class="bullet-point"><strong>Led the deployment of automation solutions</strong> for 4 key clients in the energy sector (BIPE, Frontera, Hocol), cutting data-processing times by 80% through workflow architecture built on Microsoft Power Platform and Azure.</li>
+                    <li class="bullet-point"><strong>Standardized development practices</strong> by authoring the company's first technical playbook, reducing deployment errors by 65% and improving the application lifecycle (ALM) using Azure DevOps CI/CD pipelines.</li>
+                    <li class="bullet-point"><strong>Overcame Low-Code platform limitations</strong> by developing custom backend logic in Python, Java, and SQL, building REST APIs that integrated complex legacy systems with the cloud.</li>
+                    <li class="bullet-point"><strong>Ensured regulatory compliance</strong> by configuring strict security policies (RBAC) across Microsoft 365 and Dataverse, and implemented unit testing at the backend layer under Agile/Scrum methodologies.</li>
+                </ul>
+            </div>
+
+            <!-- Medtronic -->
+            <div class="mb-2 experience-item">
+                <div class="flex justify-between items-baseline mb-0.5">
+                    <h4 class="font-bold text-gray-900 text-[15px]">Medtronic <span class="text-xs font-normal text-gray-500 ml-1">| Bogotá, Colombia (Hybrid)</span></h4>
+                    <span class="text-xs text-gray-600 font-medium whitespace-nowrap">Sep 2022 – Feb 2023</span>
+                </div>
+                <div class="italic text-gray-700 mb-1.5 font-medium text-xs">Junior Developer (Intern)</div>
+                <ul class="text-gray-700 text-sm">
+                    <li class="bullet-point"><strong>Centralized IT Asset Management</strong> by building an end-to-end platform using JavaScript, HTML, and CSS, eliminating 100% of scattered manual tracking.</li>
+                    <li class="bullet-point"><strong>Designed a scalable data architecture</strong> in Dataverse, reducing query times by implementing JSON storage and advanced relational structures.</li>
+                    <li class="bullet-point"><strong>Automated security provisioning</strong> by integrating the solution with Active Directory (RBAC) for hundreds of corporate users.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- EDUCATION & CERTS -->
+        <section class="experience-item">
+            <h3 class="section-header">Education & Certifications</h3>
+
+            <div class="mb-1 flex justify-between items-baseline text-sm">
+                <div>
+                    <span class="font-bold text-gray-900">Systems Engineering</span>
+                    <span class="text-gray-700"> (Coursework complete, degree pending) | Fund. Univ. San Mateo</span>
+                </div>
+                <span class="text-xs text-gray-600 font-medium whitespace-nowrap">2026</span>
+            </div>
+
+            <div class="text-sm">
+                <span class="font-bold text-gray-900">Technical Certifications:</span>
+                <span class="text-gray-700 ml-1">
+                    • Scrum.org: Professional Scrum Master (SMPC)
+                    <span class="mx-1 text-gray-400">|</span>
+                    • Microsoft Certified: Power Platform Fundamentals (PL-900)
+                </span>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
