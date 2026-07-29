@@ -50,9 +50,14 @@
                 display: none !important;
             }
             
-            /* Impedir saltos de página dentro de la experiencia */
-            .experience-item {
-                page-break-inside: avoid;
+            /* No cortar un bullet a la mitad, pero permitir que un bloque
+               largo continúe en la página siguiente (evita huecos enormes) */
+            .bullet-point {
+                break-inside: avoid;
+            }
+            .experience-item h4,
+            .experience-item .italic {
+                break-after: avoid;
             }
         }
 
@@ -74,22 +79,6 @@
             margin-bottom: 4px; /* Espaciado entre bullets reducido */
         }
 
-        .section-header {
-            border-bottom: 2px solid #e5e7eb;
-            padding-bottom: 4px;
-            margin-bottom: 12px;
-            margin-top: 20px;
-            font-weight: 700;
-            color: #111827;
-            text-transform: uppercase;
-            font-size: 0.875rem;
-            letter-spacing: 0.05em;
-        }
-
-        .bullet-point {
-            position: relative;
-            padding-left: 1rem;
-        }
         .bullet-point::before {
             content: "•";
             position: absolute;
